@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+
+  <!-- 1) Create an HTML structure and add CSS and Bootstrap to it. -->
+  <link href="assets/css/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body class="index-page">
+
+
+
+  <!-- 2) Create six buttons by Bootstrap Each button should have different colors and properties.  -->
+  <div class="container m-5">
+    <button type="button" class="btn btn-primary btn-lg">Primary</button>
+    <button type="button" class="btn btn-secondary btn-lg">Secondary</button>
+    <button type="button" class="btn btn-success btn-lg">Success</button>
+    <button type="button" class="btn btn-danger btn-lg">Danger</button>
+    <button type="button" class="btn btn-warning btn-lg">Warning</button>
+    <button type="button" class="btn btn-dark btn-lg">Dark</button>
+  </div>
+
+
+<!-- 3) Create a paragraph text and its color will be red. 
+     4) Put text inside an h1 tag and give it a background color.  -->
+  <div class="container m-5">
+    <h1 class="text-danger bg-dark p-5 rounded-5">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatum est, hic cumque consectetur similique enim tempore illum eius dolorem veniam aut sed non laboriosam omnis aliquid 
+      laudantium temporibus soluta. Lorem, ipsum dolor sit amet consectetur adipisicing elit.Voluptatibus quibusdam assumenda ullam quae! Facilis aliquam itaque maxime, dolorum doloribus repudiandae 
+      nesciunt veniam. Architecto, corporis nostrum illo repellat fuga vitae. Vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi animi aspernatur eius quae molestias quo doloribus, 
+      voluptas architecto porro et odit modi, odio nisi vero! Quod voluptatem dolores provident eligendi.
+    <h1>
+  </div>
+
+
+<!-- 5) Create a navbar via Bootstrap and it must have a dropdown menu. -->
+  <nav id="navbar">
+    <a class="nav-icon" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <i class="bi bi-list"></i></a>
+     <div class="nav-links">
+       <h3><a class="navbar-logo"><img src="assets/img/logo.png" alt=""><b>Agency</b></a></h3>
+       <ul class="custom-ul">
+         <li class="nav-btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><a href="">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+         <li class="nav-btn"><a href="">Our Values</a></li>
+         <li class="nav-btn"><a href="">Case Studies</a></li>
+         <li class="nav-btn"><a href=""> Blog</a></li>
+         <li class="nav-btn"><a href=""> Inner Pages</a></li>
+       </ul>
+     </div>
+     <div class="nav-extras">
+       <a class="nav-extras-text" href="">Log-in</a>
+       <a class="nav-extras-text nav-extras-btn"  href="">Register</a>
+      </div>
+   </nav>
+   
+   <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+     <div class="offcanvas-header">
+        <h3><a class="navbar-logo mt-5"><img src="assets/img/logo.png" alt=""><b>Agency</b></a></h3>
+        <button type="button" class="btn-close mt-5 nav-icon" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     </div>
+     <div class="offcanvas-body">
+       <ul class="res-custom-ul mt-5">
+        <h3>   <li class="nav-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false"><a href="">Services</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li></h3> 
+        <h3><li class="nav-btn mt-5"><a href="">Our Values</a></li></h3>
+        <h3><li class="nav-btn mt-5"><a href="">Case Studies</a></li></h3>
+        <h3><li class="nav-btn mt-5"><a href="">Blog</a></li></h3>
+        <h3><li class="nav-btn mt-5"><a href="">Inner Pages</a></li></h3>
+       </ul>
+     </div>
+   </div>
+
+
+  <!-- 6) Create a forms Input group through Bootstrap and it must have Sizing set to Small.  -->
+
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 col-12 mx-auto">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control form-control-sm" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-sm">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- 7) Suppose you have three h2 tags, now you have to place the h2 three horizontally. And it must be in reverse. How to do it with bootstrap. (Hints: flex-row-reverse) -->
+  <div class="container m-5">
+    <div class="row flex-row-reverse">
+      <div class="col">
+        <h2>Third Heading</h2>
+      </div>
+      <div class="col">
+        <h2>Second Heading</h2>
+      </div>
+      <div class="col">
+        <h2>First Heading</h2>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="m-5">
+
+   </div>
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/css/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

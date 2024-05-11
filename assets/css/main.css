@@ -1,0 +1,117 @@
+a {
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+
+
+/* 5) Create a navbar via Bootstrap and it must have a dropdown menu. */
+
+nav {
+    padding: 25px 130px;
+    display: flex;
+    justify-content: space-between;
+    background: rgb(199, 197, 197);
+  }
+
+  .nav-links {
+    display: flex;
+    margin-left: -250px;
+  }
+  
+  .custom-ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+  }
+  
+  .res-custom-ul {
+    list-style-type: none;
+  }
+  
+  .custom-ul li {
+    font-size: 20px;
+    padding: 10px 25px;
+  }
+  
+  .navbar-logo img {
+    max-height: 50px;
+  }
+  
+  .nav-btn {
+    border-bottom: 0 solid #2196F3;
+  }
+  
+  .nav-btn:hover {
+    color: #2196F3;
+    border-bottom-width: 4px;
+  }
+  
+  .nav-extras{
+    display: flex;
+  }
+  .nav-extras-text{
+    font-size: 20px;
+    font-weight: bold;
+    padding-right: 50px;
+    margin-top: 10px;
+  }
+  
+  .nav-extras-btn {
+    background-color: #2196F3;
+    height: 40px;
+    color: white;
+    padding: 5px 16px;
+    text-align: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    margin-right: 20px;
+  }
+  .nav-extras-btn:hover{
+    color: #ffffff;
+  }
+  
+  .nav-icon {
+    font-size: 40px;
+  }
+  
+  /* Hide the menu icon above 980px */
+  @media screen and (min-width: 981px) {
+    .bi-list {
+      display: none;
+    }
+  }
+  
+  /* Hide the navbar links below 980px */
+  @media screen and (max-width: 980px) {
+    nav {
+      padding: 50px 40px;
+      align-items: normal; 
+    }
+    .nav-links {
+      margin-left: -0px;
+    }
+    .navbar-logo img {
+      margin-right: 0px;
+    }
+    .custom-ul {
+      display: none;
+    }
+  
+    .nav-extras-text{
+    display: none;
+    }
+    .extra-nav-icon{
+  
+      border-left: none;
+    }
+    
+  }
+
+
